@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /order-title.html
+Sitemap: https://valianttitle.com/sitemap.xml

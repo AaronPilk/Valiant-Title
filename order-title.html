@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Order Title — Submit a Title Request | Valiant Title</title>
+  <meta name="description" content="Submit a new title order to Valiant Title. Send your transaction, property and agent/lender details to start your closing in NC or SC.">
+  <link rel="canonical" href="https://valianttitle.com/order-title.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Order Title — Submit a Title Request | Valiant Title">
+  <meta property="og:description" content="Submit a new title order with property and transaction details. Fast, accurate title services across the Carolinas.">
+  <meta property="og:url" content="https://valianttitle.com/order-title.html">
+  <meta property="og:image" content="https://valianttitle.com/assets/og-order.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-band" role="region" aria-label="After-hours contact bar">
+    <div class="container top-band__inner">
+      <span>Available Nights &amp; Weekends</span>
+      <a href="tel:+17045550100" aria-label="Call 704-555-0100">704-555-0100</a>
+      <a href="mailto:orders@valianttitle.com" aria-label="Email orders inbox">orders@valianttitle.com</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__brand" aria-label="Valiant Title — Home"><img src="assets/valiant-logo.png" alt="Valiant Title" class="site-header__logo" width="320" height="80"></a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="home-owners.html">Home Owners</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link" href="https://www.jointventuretitleinsurance.com/" target="_blank" rel="noopener noreferrer">Joint Venture</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#order-form">Order now</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" aria-hidden="true">
+      <div class="container">
+        <div class="mobile-menu__head">
+          <a href="index.html" class="site-header__brand"><img src="assets/valiant-logo.png" alt="Valiant Title" class="site-header__logo" width="256" height="64"></a>
+          <button class="mobile-menu__close" aria-label="Close menu" data-nav-close>×</button>
+        </div>
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="index.html">Home</a></li>
+          <li><a class="mobile-menu__link" href="services.html">Services</a></li>
+          <li><a class="mobile-menu__link" href="home-owners.html">Home Owners</a></li>
+          <li><a class="mobile-menu__link" href="contact.html">Contact</a></li>
+          <li><a class="mobile-menu__link" href="https://www.jointventuretitleinsurance.com/" target="_blank" rel="noopener noreferrer">Joint Venture</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block mobile-menu__cta" href="#order-form">Order now</a>
+        <div class="mobile-menu__contact">
+          <p><strong>Call us today:</strong> <a href="tel:+17045550100">704-555-0100</a></p>
+          <p><a href="mailto:orders@valianttitle.com">orders@valianttitle.com</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+          <p class="eyebrow center">Valiant Title</p>
+          <h1 class="hero__title">Order Title</h1>
+          <p class="hero__sub" style="margin-inline: auto;">Submit your transaction, property and agent/lender info below. We'll confirm receipt at <a href="mailto:orders@valianttitle.com">orders@valianttitle.com</a> and reach back out within one business day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="form-card" id="order-form" data-reveal>
+
+          <form class="form" action="mailto:orders@valianttitle.com" method="POST" enctype="text/plain" aria-label="Order title form">
+
+            <fieldset>
+              <legend>Your info</legend>
+              <div class="form-fields">
+                <div class="form-row">
+                  <label for="your-name">Your name <span aria-hidden="true">*</span></label>
+                  <input id="your-name" name="Your Name" type="text" required autocomplete="name">
+                </div>
+                <div class="form-row">
+                  <label for="your-company">Company</label>
+                  <input id="your-company" name="Company" type="text" autocomplete="organization">
+                </div>
+                <div class="form-row">
+                  <label for="your-email">Email <span aria-hidden="true">*</span></label>
+                  <input id="your-email" name="Email" type="email" required autocomplete="email">
+                </div>
+                <div class="form-row">
+                  <label for="your-phone">Phone</label>
+                  <input id="your-phone" name="Phone" type="tel" autocomplete="tel">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Transaction info</legend>
+              <div class="form-fields">
+                <div class="form-row form-row--full" style="grid-column: 1 / -1;">
+                  <label for="ref-or-purchase">Refinance or Purchase <span aria-hidden="true">*</span></label>
+                  <select id="ref-or-purchase" name="Refinance or Purchase" required>
+                    <option value="">Select one…</option>
+                    <option>Purchase</option>
+                    <option>Refinance</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <label for="loan-amount">Loan amount</label>
+                  <input id="loan-amount" name="Loan Amount" type="text" inputmode="decimal" placeholder="$">
+                </div>
+                <div class="form-row">
+                  <label for="sale-amount">Sale amount</label>
+                  <input id="sale-amount" name="Sale Amount" type="text" inputmode="decimal" placeholder="$">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Property info</legend>
+              <div class="form-fields">
+                <div class="form-row">
+                  <label for="seller-name">Seller / Owners name</label>
+                  <input id="seller-name" name="Seller/Owners Name" type="text">
+                </div>
+                <div class="form-row">
+                  <label for="buyer-name">Buyers name</label>
+                  <input id="buyer-name" name="Buyers Name" type="text">
+                </div>
+                <div class="form-row form-row--full" style="grid-column: 1 / -1;">
+                  <label for="property-address">Property address <span aria-hidden="true">*</span></label>
+                  <input id="property-address" name="Property Address" type="text" required autocomplete="street-address">
+                </div>
+                <div class="form-row">
+                  <label for="property-city">City <span aria-hidden="true">*</span></label>
+                  <input id="property-city" name="City" type="text" required autocomplete="address-level2">
+                </div>
+                <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                  <div>
+                    <label for="property-state">State <span aria-hidden="true">*</span></label>
+                    <input id="property-state" name="State" type="text" required maxlength="2" placeholder="NC" style="text-transform: uppercase;" autocomplete="address-level1">
+                  </div>
+                  <div>
+                    <label for="property-zip">Zip <span aria-hidden="true">*</span></label>
+                    <input id="property-zip" name="Zip" type="text" required inputmode="numeric" pattern="\d{5}(-\d{4})?" autocomplete="postal-code">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Agent / Lender info <span class="muted" style="font-weight: 400; font-size: 0.9rem;">(optional)</span></legend>
+              <div class="form-fields">
+                <div class="form-row">
+                  <label for="agent-name">Agent / Lender name</label>
+                  <input id="agent-name" name="Agent or Lender Name" type="text">
+                </div>
+                <div class="form-row">
+                  <label for="agent-company">Company</label>
+                  <input id="agent-company" name="Agent or Lender Company" type="text">
+                </div>
+                <div class="form-row">
+                  <label for="agent-email">Email</label>
+                  <input id="agent-email" name="Agent or Lender Email" type="email">
+                </div>
+                <div class="form-row">
+                  <label for="agent-phone">Phone</label>
+                  <input id="agent-phone" name="Agent or Lender Phone" type="tel">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional info / notes <span class="muted" style="font-weight: 400; font-size: 0.9rem;">(optional)</span></legend>
+              <div class="form-fields">
+                <div class="form-row form-row--full" style="grid-column: 1 / -1;">
+                  <label for="order-notes">Notes</label>
+                  <textarea id="order-notes" name="Notes" rows="5" placeholder="Anything we should know about this order — closing date, deadlines, contacts, etc."></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Document upload <span class="muted" style="font-weight: 400; font-size: 0.9rem;">(optional)</span></legend>
+              <div class="form-fields">
+                <div class="form-row form-row--full" style="grid-column: 1 / -1;">
+                  <p class="form-disclaimer" style="margin-bottom: 8px;">
+                    <strong>Important:</strong> please note this site is not intended for the transmission of sensitive information such as Social Security numbers, Driver's Licenses, or bank information. Do not upload any documents containing Personally Identifiable Information (PII).
+                  </p>
+                  <label for="upload">Upload file <span class="muted">(max 15&nbsp;MB)</span></label>
+                  <input id="upload" name="Upload" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.tif,.tiff" style="padding: 10px;">
+                  <p class="hint">Supported file types: PDF, DOC/DOCX, JPG, PNG, TIFF.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Security</legend>
+              <div class="form-fields">
+                <div class="form-row form-row--full" style="grid-column: 1 / -1;">
+                  <label for="security">For security purposes, what is the sum of 8 and 8? <span aria-hidden="true">*</span></label>
+                  <input id="security" name="Security" type="text" required inputmode="numeric" pattern="^16$" title="Please answer 16">
+                  <p class="hint">Type the number — not the word.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn--primary">Submit order</button>
+              <span class="muted" style="font-size: 0.9rem;">Or email <a href="mailto:orders@valianttitle.com">orders@valianttitle.com</a> directly.</span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">Valiant Title</p>
+          <p style="font-size: 0.92rem;">Headquartered in Charlotte, NC. We service North Carolina and South Carolina from the mountains to the coast.</p>
+          <p style="font-size: 0.92rem;"><strong style="color:#fff;">Phone:</strong> <a href="tel:+17045550100">704-555-0100</a></p>
+        </div>
+        <div>
+          <h3 class="site-footer__head">Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="home-owners.html">Home Owners</a></li>
+            <li><a href="order-title.html">Order Title</a></li>
+            <li><a href="https://www.jointventuretitleinsurance.com/" target="_blank" rel="noopener noreferrer">Joint Venture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="site-footer__head">Email</h3>
+          <ul>
+            <li><a href="mailto:info@valianttitle.com">info@valianttitle.com</a><br><span style="opacity:.75; font-size: 0.85rem;">General inquiries</span></li>
+            <li><a href="mailto:orders@valianttitle.com">orders@valianttitle.com</a><br><span style="opacity:.75; font-size: 0.85rem;">New real estate contracts</span></li>
+            <li><a href="mailto:finals@valianttitle.com">finals@valianttitle.com</a><br><span style="opacity:.75; font-size: 0.85rem;">Final title requests</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="site-footer__head">Service Area</h3>
+          <ul>
+            <li>Charlotte, NC &amp; surrounding</li>
+            <li>All of North Carolina</li>
+            <li>All of South Carolina</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© <span id="year"></span> Valiant Title. All rights reserved.</span>
+        <span>Licensed in NC and SC.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
