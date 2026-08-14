@@ -5,33 +5,33 @@
    ========================================================================= */
 
 :root {
-  /* Brand palette — deep navy + sky. Swap these to match the Valiant logo. */
-  --brand-primary:    #0B2E52;  /* deep navy */
-  --brand-primary-700:#071f3a;
-  --brand-primary-50: #e8eef5;
-  --brand-secondary:  #B5CFE6;  /* soft sky */
-  --brand-secondary-200:#d4e3f1;
-  --brand-accent:     #2f6db0;  /* royal-blue accent for CTAs */
-  --brand-accent-700: #1f5896;
-  --brand-ink:        #1a1a1a;
-  --brand-muted:      #5b6b7c;
+  /* Brand palette — warm slate ink + brass gold on bone. Swap to match logo. */
+  --brand-primary:    #1c2833;  /* deep slate ink */
+  --brand-primary-700:#111a22;
+  --brand-primary-50: #eef0f2;
+  --brand-secondary:  #cdb488;  /* soft champagne gold */
+  --brand-secondary-200:#e4d7bd;
+  --brand-accent:     #b58a3f;  /* brass gold accent for CTAs */
+  --brand-accent-700: #916a2c;
+  --brand-ink:        #1f262d;
+  --brand-muted:      #5f6b74;
   --brand-bg:         #ffffff;
-  --brand-bg-soft:    #dde8f3;  /* deeper pale navy section bg */
-  --brand-bg-tint:    #eaf0f7;  /* pale navy tint */
-  --brand-border:     #c8d6e5;  /* cool gray-blue */
+  --brand-bg-soft:    #f4f1ea;  /* warm bone section bg */
+  --brand-bg-tint:    #faf7f0;  /* warm bone tint */
+  --brand-border:     #e7e1d5;  /* warm sand border */
   --brand-success:    #2e7d4f;
   --brand-danger:     #b1392a;
 
-  --shadow-sm: 0 1px 2px rgba(0,48,91,.06), 0 1px 3px rgba(0,48,91,.04);
-  --shadow-md: 0 6px 18px rgba(0,48,91,.08), 0 2px 6px rgba(0,48,91,.04);
-  --shadow-lg: 0 18px 48px rgba(0,48,91,.14), 0 4px 12px rgba(0,48,91,.06);
+  --shadow-sm: 0 1px 2px rgba(28,40,51,.06), 0 1px 3px rgba(28,40,51,.04);
+  --shadow-md: 0 6px 18px rgba(28,40,51,.08), 0 2px 6px rgba(28,40,51,.04);
+  --shadow-lg: 0 18px 48px rgba(28,40,51,.14), 0 4px 12px rgba(28,40,51,.06);
 
   --radius-sm: 8px;
-  --radius:    12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius:    10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
 
-  --font-serif: "Source Serif Pro", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-serif: "Fraunces", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --font-sans:  "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --header-h: 64px;
@@ -69,7 +69,7 @@ video { display: block; max-width: 100%; height: auto; }
 
 a {
   color: var(--brand-primary);
-  text-decoration-color: rgba(0, 48, 91, 0.35);
+  text-decoration-color: rgba(28,40,51, 0.35);
   text-underline-offset: 2px;
   transition: color .15s ease, text-decoration-color .15s ease;
 }
@@ -164,7 +164,7 @@ section[id],
   transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
 }
 .btn:focus-visible {
-  outline: 3px solid rgba(0, 48, 91, 0.25);
+  outline: 3px solid rgba(28,40,51, 0.25);
   outline-offset: 2px;
 }
 .btn:hover { transform: translateY(-1px); }
@@ -178,9 +178,9 @@ section[id],
 .btn--ghost {
   background: transparent;
   color: var(--brand-primary);
-  border-color: rgba(0, 48, 91, 0.25);
+  border-color: rgba(28,40,51, 0.25);
 }
-.btn--ghost:hover { border-color: var(--brand-primary); background: rgba(0,48,91,.04); }
+.btn--ghost:hover { border-color: var(--brand-primary); background: rgba(28,40,51,.04); }
 
 .btn--accent {
   background: var(--brand-accent);
@@ -211,7 +211,7 @@ section[id],
 
 .top-band {
   background: linear-gradient(90deg, var(--brand-secondary) 0%, var(--brand-secondary-200) 50%, #fff 100%);
-  border-bottom: 1px solid rgba(0,48,91,.05);
+  border-bottom: 1px solid rgba(28,40,51,.05);
   font-size: 0.82rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -237,7 +237,7 @@ section[id],
 /* Phone band — secondary nights & weekends row used on Home below hero */
 .phone-band {
   background: var(--brand-primary-50);
-  border-block: 1px solid rgba(0,48,91,.08);
+  border-block: 1px solid rgba(28,40,51,.08);
 }
 .phone-band__inner {
   display: flex;
@@ -341,7 +341,7 @@ section[id],
 .nav__link:hover,
 .nav__link[aria-current="page"] {
   color: var(--brand-primary);
-  background: rgba(0,48,91,.05);
+  background: rgba(28,40,51,.05);
 }
 
 .nav__cta { margin-left: 6px; }
@@ -364,7 +364,7 @@ section[id],
   cursor: pointer;
 }
 .nav-toggle:focus-visible {
-  outline: 3px solid rgba(0,48,91,.25);
+  outline: 3px solid rgba(28,40,51,.25);
   outline-offset: 2px;
 }
 .nav-toggle__bar {
@@ -489,7 +489,7 @@ section[id],
   overflow: hidden;
   box-shadow: var(--shadow-md);
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, var(--brand-primary) 0%, #1a4a7a 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, #2a3a48 100%);
 }
 
 .hero__art img,
@@ -548,7 +548,7 @@ section[id],
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,48,91,0.20) 0%, rgba(0,48,91,0.50) 100%);
+  background: linear-gradient(180deg, rgba(28,40,51,0.20) 0%, rgba(28,40,51,0.50) 100%);
 }
 .hero--image .hero__overlay {
   position: relative;
@@ -570,7 +570,7 @@ section[id],
   border: 1px solid rgba(255,255,255,.12);
 }
 .hero-card--soft {
-  background: rgba(0,48,91,0.85);
+  background: rgba(28,40,51,0.85);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -688,7 +688,7 @@ section[id],
 /* ---------- Service grid (3x3 white-on-navy) ---------- */
 
 .service-grid-section {
-  background: linear-gradient(135deg, var(--brand-primary) 0%, #1a4a7a 60%, var(--brand-primary-700) 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, #2a3a48 60%, var(--brand-primary-700) 100%);
   color: #fff;
 }
 .service-grid-section h2,
@@ -851,7 +851,7 @@ section[id],
 .form-row--full textarea:focus {
   outline: none;
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 3px rgba(0, 48, 91, 0.15);
+  box-shadow: 0 0 0 3px rgba(28,40,51, 0.15);
 }
 .form-row .hint,
 .form-row--full .hint {
@@ -1001,7 +1001,7 @@ section[id],
   font-weight: 700;
   border-radius: 999px;
   margin: 0 auto 22px;
-  box-shadow: 0 4px 12px rgba(0, 48, 91, 0.4);
+  box-shadow: 0 4px 12px rgba(28,40,51, 0.4);
 }
 .respa-condition__text {
   font-size: 0.92rem;
@@ -1081,7 +1081,7 @@ section[id],
 .video-frame {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, var(--brand-primary) 0%, #1a4a7a 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, #2a3a48 100%);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -1258,7 +1258,7 @@ video.video-frame,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,33,69,0.65) 0%, rgba(0,48,91,0.85) 100%);
+  background: linear-gradient(180deg, rgba(17,26,34,0.65) 0%, rgba(28,40,51,0.85) 100%);
   z-index: 1;
 }
 .cta-strip__inner {
@@ -1299,7 +1299,7 @@ video.video-frame,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,33,69,0.40) 0%, rgba(0,21,48,0.65) 100%);
+  background: linear-gradient(180deg, rgba(17,26,34,0.40) 0%, rgba(12,18,24,0.65) 100%);
   z-index: 1;
 }
 .dual-card-hero__grid {
@@ -1495,7 +1495,7 @@ video.video-frame,
 
 .highlight {
   background: var(--brand-secondary, #f4c243);
-  color: var(--brand-primary, #00305B);
+  color: var(--brand-primary, #1c2833);
   padding: 0.05em 0.35em;
   border-radius: 4px;
   font-weight: 700;
@@ -1528,7 +1528,7 @@ video.video-frame,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,33,69,0.40) 0%, rgba(0,33,69,0.55) 60%, rgba(0,33,69,0.70) 100%);
+  background: linear-gradient(180deg, rgba(17,26,34,0.40) 0%, rgba(17,26,34,0.55) 60%, rgba(17,26,34,0.70) 100%);
   z-index: 1;
 }
 .hero__center {
@@ -1604,8 +1604,8 @@ video.video-frame,
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
-  background-color: #00305B;
-  background-image: linear-gradient(180deg, rgba(0,33,69,0.30) 0%, rgba(0,33,69,0.55) 100%), url("assets/charlotte.webp");
+  background-color: #1c2833;
+  background-image: linear-gradient(180deg, rgba(17,26,34,0.30) 0%, rgba(17,26,34,0.55) 100%), url("assets/charlotte.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1696,7 +1696,7 @@ video.video-frame,
 }
 .site-header.is-scrolled {
   background: rgba(255,255,255,0.92);
-  box-shadow: 0 6px 24px rgba(0,48,91,.10);
+  box-shadow: 0 6px 24px rgba(28,40,51,.10);
   border-bottom-color: transparent;
 }
 .site-header.is-scrolled .site-header__inner { height: calc(var(--header-h) - 8px); }
@@ -1704,18 +1704,18 @@ video.video-frame,
 
 /* ---------- Refined buttons (more depth, subtle shine) ---------- */
 .btn--primary {
-  background: linear-gradient(180deg, #0a3f72 0%, var(--brand-primary) 100%);
-  box-shadow: 0 1px 0 rgba(255,255,255,.08) inset, 0 8px 20px rgba(0,48,91,.18);
+  background: linear-gradient(180deg, #2a3a48 0%, var(--brand-primary) 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.08) inset, 0 8px 20px rgba(28,40,51,.18);
 }
 .btn--primary:hover {
-  background: linear-gradient(180deg, #0a3f72 0%, var(--brand-primary-700) 100%);
-  box-shadow: 0 1px 0 rgba(255,255,255,.10) inset, 0 12px 28px rgba(0,48,91,.26);
+  background: linear-gradient(180deg, #2a3a48 0%, var(--brand-primary-700) 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.10) inset, 0 12px 28px rgba(28,40,51,.26);
   transform: translateY(-2px);
 }
 .btn--accent {
-  box-shadow: 0 8px 20px rgba(47,109,176,.22);
+  box-shadow: 0 8px 20px rgba(181,138,63,.22);
 }
-.btn--accent:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(47,109,176,.30); }
+.btn--accent:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(181,138,63,.30); }
 .btn--white { box-shadow: 0 8px 24px rgba(0,0,0,.16); }
 .btn--white:hover { transform: translateY(-2px); }
 
@@ -1763,12 +1763,12 @@ video.video-frame,
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(0,24,52,.42) 0%, rgba(0,24,52,.30) 45%, rgba(0,24,52,.74) 100%),
-    radial-gradient(120% 90% at 50% 8%, rgba(0,0,0,0) 40%, rgba(0,20,45,.45) 100%);
+    linear-gradient(180deg, rgba(12,18,24,.42) 0%, rgba(12,18,24,.30) 45%, rgba(12,18,24,.74) 100%),
+    radial-gradient(120% 90% at 50% 8%, rgba(0,0,0,0) 40%, rgba(14,20,28,.45) 100%);
 }
 .bt-hero--video .bt-hero__inner { z-index: 2; }
 .bt-hero--video {
-  background-image: linear-gradient(180deg, rgba(0,33,69,.30), rgba(0,33,69,.55)), url("assets/charlotte.webp");
+  background-image: linear-gradient(180deg, rgba(17,26,34,.30), rgba(17,26,34,.55)), url("assets/charlotte.webp");
 }
 
 /* Animated hero entrance */
@@ -1884,8 +1884,8 @@ video.video-frame,
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(60% 70% at 78% 0%, rgba(47,109,176,.10) 0%, rgba(47,109,176,0) 60%),
-    radial-gradient(55% 60% at 8% 100%, rgba(181,207,230,.22) 0%, rgba(181,207,230,0) 60%);
+    radial-gradient(60% 70% at 78% 0%, rgba(181,138,63,.10) 0%, rgba(181,138,63,0) 60%),
+    radial-gradient(55% 60% at 8% 100%, rgba(205,180,136,.22) 0%, rgba(205,180,136,0) 60%);
   pointer-events: none;
 }
 .hero .container { position: relative; z-index: 1; }
@@ -1903,7 +1903,7 @@ video.video-frame,
   .contact-grid { grid-template-columns: 0.85fr 1.15fr; gap: 36px; }
 }
 .contact-aside {
-  background: linear-gradient(160deg, var(--brand-primary) 0%, #0a2f56 55%, var(--brand-primary-700) 100%);
+  background: linear-gradient(160deg, var(--brand-primary) 0%, #16222e 55%, var(--brand-primary-700) 100%);
   color: #fff;
   border-radius: var(--radius-xl);
   padding: 36px 30px;
@@ -1919,7 +1919,7 @@ video.video-frame,
   right: -60px; bottom: -60px;
   width: 220px; height: 220px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(181,207,230,.22) 0%, rgba(181,207,230,0) 70%);
+  background: radial-gradient(circle, rgba(205,180,136,.22) 0%, rgba(205,180,136,0) 70%);
   pointer-events: none;
 }
 .contact-aside .eyebrow { color: var(--brand-secondary); }
@@ -1972,8 +1972,8 @@ video.video-frame,
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(70% 110% at 88% -10%, rgba(47,109,176,.12) 0%, rgba(47,109,176,0) 55%),
-    radial-gradient(60% 80% at -5% 110%, rgba(181,207,230,.28) 0%, rgba(181,207,230,0) 55%),
+    radial-gradient(70% 110% at 88% -10%, rgba(181,138,63,.12) 0%, rgba(181,138,63,0) 55%),
+    radial-gradient(60% 80% at -5% 110%, rgba(205,180,136,.28) 0%, rgba(205,180,136,0) 55%),
     linear-gradient(180deg, #fff 0%, var(--brand-bg-tint) 100%);
   border-bottom: 1px solid var(--brand-border);
 }
@@ -2027,7 +2027,7 @@ video.video-frame,
 .home-hero__chip {
   position: absolute; z-index: 2; left: 18px; bottom: 18px;
   display: flex; align-items: center; gap: 12px;
-  background: rgba(0,33,69,.82);
+  background: rgba(17,26,34,.82);
   backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
   color: #fff; padding: 12px 16px; border-radius: var(--radius);
   box-shadow: var(--shadow-md); max-width: calc(100% - 36px);
@@ -2115,4 +2115,82 @@ video.video-frame,
   text-align: center;
   letter-spacing: 0.01em;
   opacity: 0.9;
+}
+
+/* =========================================================================
+   VALIANT IDENTITY — warm ink + brass gold on bone.
+   Appended last so it wins the cascade over the reference base styles.
+   Distinct look: slim ink utility bar, Fraunces display, squared gold
+   buttons, gold accents in place of the reference navy/sky scheme.
+   ========================================================================= */
+
+h1, h2, h3, h4 { letter-spacing: -0.015em; }
+
+/* Slim ink utility bar with gold accents (was a sky gradient) */
+.top-band {
+  background: var(--brand-primary);
+  border-bottom: none;
+  color: rgba(255,255,255,0.80);
+}
+.top-band a { color: var(--brand-secondary); }
+.top-band a:hover { color: #fff; text-decoration: none; }
+
+/* Header — frosted on bone with a warm hairline */
+.site-header { background: rgba(255,255,255,0.82); border-bottom-color: var(--brand-border); }
+.site-header.is-scrolled { background: rgba(255,255,255,0.92); box-shadow: 0 6px 24px rgba(28,40,51,.08); }
+
+/* Buttons — squared, brass-gold primary with ink text */
+.btn { border-radius: 8px; font-weight: 600; letter-spacing: 0.005em; }
+.btn--primary {
+  background: var(--brand-accent);
+  color: #1c2833;
+  box-shadow: 0 1px 0 rgba(255,255,255,.20) inset, 0 8px 20px rgba(181,138,63,.24);
+}
+.btn--primary:hover {
+  background: var(--brand-accent-700);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(145,106,44,.30);
+  transform: translateY(-2px);
+}
+.btn--ghost { background: transparent; color: var(--brand-primary); border-color: rgba(28,40,51,.28); }
+.btn--ghost:hover { border-color: var(--brand-primary); background: rgba(28,40,51,.04); }
+.btn--accent { background: var(--brand-accent); color: #1c2833; box-shadow: 0 8px 20px rgba(181,138,63,.22); }
+.btn--accent:hover { background: var(--brand-accent-700); color: #fff; }
+.btn--white { background: #fff; color: var(--brand-primary); }
+
+/* Gold italic accents (hero headline emphasis) */
+.accent,
+.home-hero__title .accent,
+.hero__display-accent,
+.bt-hero__accent { color: var(--brand-accent); font-style: italic; }
+
+/* Eyebrows in brass */
+.eyebrow, .home-hero__eyebrow { color: var(--brand-accent-700); }
+
+/* Cards — gold top edge + gold icon on hover */
+.card__icon { background: var(--brand-secondary-200); color: var(--brand-accent-700); }
+.card::before { background: linear-gradient(90deg, var(--brand-accent), var(--brand-secondary)); }
+.card:hover { border-color: var(--brand-secondary); }
+.card:hover .card__icon { background: var(--brand-accent); color: #1c2833; }
+
+/* Service tiles — gold hover accents on the ink field */
+.service-tile:hover { border-color: var(--brand-secondary); box-shadow: 0 16px 34px rgba(0,0,0,.28); }
+.service-tile:hover svg { stroke: var(--brand-secondary); }
+
+/* Check bullets in brass */
+.trust-list li::before { background: var(--brand-accent); }
+
+/* Stat band on warm bone */
+.stat-band { background: var(--brand-bg-tint); border-block-color: var(--brand-border); }
+.stat b { color: var(--brand-primary); }
+
+/* Underwriter names */
+.underwriter-name { color: var(--brand-primary); }
+
+/* Focus rings in brass */
+.btn:focus-visible { outline: 3px solid rgba(181,138,63,.35); }
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus,
+.form-row--full input:focus, .form-row--full select:focus, .form-row--full textarea:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(181,138,63,.18);
 }
